@@ -5,16 +5,61 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'jhi-create-your-ideas',
   standalone: true,
-  styleUrls: ['styles.scss'],
+  styleUrls: ['styles.scss'],  styles: [`
+    .page-banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: linear-gradient(to bottom, #cb60b3 0%, #c146a1 50%, #a80077 51%, #db36a4 100%);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .page-banner h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: -0.125rem;
+      margin: 0;
+      font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    }
+
+    .page-banner p {
+      margin-top: 1rem;
+      color: #ffffff;
+    }
+
+    .divider {
+      width: 80%;
+      height: 2px;
+      margin-top: 0.75rem;
+      background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0.2) 0%,
+        rgba(255,255,255,0.8) 50%,
+        rgba(255,255,255,0.2) 100%
+      );
+    }
+  `],
   imports: [CommonModule, RouterModule],
   template: `
     <div class="row">
       <div class="col-md-12">
-        <h1 class="display-4">Create Your Ideas</h1>
-        <p class="lead">Eine kollaborative Plattform für die Evolution von Ideen</p>
+        <div class="page-banner">
+          <h1 class="display-4">Create Your Ideas</h1>
+          <p class="lead">Eine kollaborative Plattform für die Evolution von Ideen</p>
+          <div class="divider"></div>
+        </div>
 
         <div class="card mb-4">
-          <div class="card-header bg-primary text-white">
+
+        <div class="card-header bg-primary text-white">
             <h2>Neudenken der Startup-Kultur</h2>
           </div>
           <div class="card-body">

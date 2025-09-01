@@ -19,4 +19,43 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-// ... weitere gemeinsame Styles
+.page-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(to bottom, #cb60b3 0%, #c146a1 50%, #a80077 51%, #db36a4 100%);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.125rem;
+  margin: 0;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+}
+
+.page-banner p {
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.divider {
+  width: 80%;
+  height: 2px;
+  margin-top: 0.75rem;
+  background: linear-gradient(
+      90deg,
+      rgba(255,255,255,0.2) 0%,
+      rgba(255,255,255,0.8) 50%,
+      rgba(255,255,255,0.2) 100%
+  );
+}
