@@ -103,7 +103,7 @@ import { RouterModule } from '@angular/router';
               class="rounded shadow"
               preload="metadata"
             >
-              <source src="http://localhost:34987/videos/createyourevent.mp4" type="video/mp4">
+              <source src="https://heartfull-mind.space/videos/createyourevent.mp4" type="video/mp4">
               Ihr Browser unterstützt das Video-Element nicht.
             </video>
           </div>
