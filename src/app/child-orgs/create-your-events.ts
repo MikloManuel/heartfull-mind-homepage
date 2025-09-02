@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import {Router, RouterModule} from '@angular/router';
 
 @Component({
   selector: 'jhi-create-your-events',
@@ -89,7 +89,8 @@ import { RouterModule } from '@angular/router';
     <div class="row">
       <div class="col-md-12">
         <div class="page-banner">
-         <h1 class="title">Create Your Event</h1>
+          <div class="logo" [ngStyle]="{'background-image': 'url(' + logoUrl + ')'}"></div>
+          <h1 class="title">Create Your Event</h1>
           <p class="lead">Ein runder Tisch für Organisatoren, Verkäufer, Dienstleistern und natürlich den Event-Kunden..</p>
         </div>
         <div class="card mb-4">
@@ -97,17 +98,17 @@ import { RouterModule } from '@angular/router';
             <h2>Event-Präsentation</h2>
           </div>
           <div class="card-body video-container">
-            <video
-              controls
-              autoplay
-              muted
-              width="100%"
-              class="rounded shadow"
-              preload="metadata"
-            >
-              <source src="https://youtu.be/q-DjFOtJhxQ" type="video/mp4">
-              Ihr Browser unterstützt das Video-Element nicht.
-            </video>
+            <div class="text-center mb-4">
+              <iframe
+                width="960"
+                height="540"
+                src="https://www.youtube.com/embed/q-DjFOtJhxQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
         </div>
 
@@ -445,6 +446,32 @@ import { RouterModule } from '@angular/router';
     </div>
   `,
 })
-export class CreateYourEventsComponent {
-  constructor() {}
+export class CreateYourEventsComponent implements OnInit {
+
+  logoUrl: string = '';
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.setLogoBasedOnRoute();
+  }
+
+  private setLogoBasedOnRoute(): void {
+    const currentRoute = this.router.url;
+
+    // Pfade zu den Logos basierend auf der Route
+    if (currentRoute.includes('heartfull-mind')) {
+      this.logoUrl = './images/logos/svg_output/heartfull-mind.svg';
+    } else if (currentRoute.includes('create-your-humanity')) {
+      this.logoUrl = './images/logos/svg_output/createyourhumanity.svg';
+    } else if (currentRoute.includes('create-your-event')) {
+      this.logoUrl = './images/logos/svg_output/createyourevent.svg';
+    } else if (currentRoute.includes('create-your-ideas')) {
+      this.logoUrl = './images/logos/svg_output/createyourideas.svg';
+    } else if (currentRoute.includes('create-your-senses')) {
+      this.logoUrl = './images/logos/svg_output/createyoursenses.svg';
+    } else if (currentRoute.includes('really-fair')) {
+      this.logoUrl = './images/logos/svg_output/really-fair.svg';
+    }
+  }
 }

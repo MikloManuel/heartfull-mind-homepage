@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import {Router, RouterModule} from '@angular/router';
 
 @Component({
   selector: 'jhi-create-your-senses',
@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
     <div class="row">
       <div class="col-md-12">
         <div class="page-banner">
+          <div class="logo" [ngStyle]="{'background-image': 'url(' + logoUrl + ')'}"></div>
          <h1 class="display-4">Create Your Senses</h1>
          <p class="lead">Eine Plattform für Sinnstiftung und persönliches Wachstum</p>
         </div>
@@ -91,5 +92,30 @@ import { RouterModule } from '@angular/router';
   `,
 })
 export class CreateYourSensesComponent {
-  constructor() {}
+  logoUrl: string = '';
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.setLogoBasedOnRoute();
+  }
+
+  private setLogoBasedOnRoute(): void {
+    const currentRoute = this.router.url;
+
+    // Pfade zu den Logos basierend auf der Route
+    if (currentRoute.includes('heartfull-mind')) {
+      this.logoUrl = './images/logos/svg_output/heartfull-mind.svg';
+    } else if (currentRoute.includes('create-your-humanity')) {
+      this.logoUrl = './images/logos/svg_output/createyourhumanity.svg';
+    } else if (currentRoute.includes('create-your-event')) {
+      this.logoUrl = './images/logos/svg_output/createyourevent.svg';
+    } else if (currentRoute.includes('create-your-ideas')) {
+      this.logoUrl = './images/logos/svg_output/createyourideas.svg';
+    } else if (currentRoute.includes('create-your-senses')) {
+      this.logoUrl = './images/logos/svg_output/createyoursenses.svg';
+    } else if (currentRoute.includes('really-fair')) {
+      this.logoUrl = './images/logos/svg_output/really-fair.svg';
+    }
+  }
 }

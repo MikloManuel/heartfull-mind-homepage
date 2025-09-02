@@ -50,7 +50,11 @@ import { RouterModule } from '@angular/router';
             </p>
 
             <div class="text-center mb-4 mindmap-org">
-              <div style="width: 960px; height: 720px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:960px; height:720px" src="https://lucid.app/documents/embedded/2a0430a4-ced7-4345-b526-e7d16a924a8b" id="4KYM5G3hrPTr"></iframe></div>
+              <div style="display: flex; justify-content: center;">
+                <div style="width: 960px; height: 720px; margin: 10px; position: relative;">
+                  <iframe allowfullscreen frameborder="0" style="width:960px; height:720px" src="https://lucid.app/documents/embedded/2a0430a4-ced7-4345-b526-e7d16a924a8b" id="4KYM5G3hrPTr"></iframe>
+                </div>
+              </div>
             </div>
 
             <p>
@@ -91,7 +95,7 @@ import { RouterModule } from '@angular/router';
                       Die Basis unserer vernetzten Projekte. Hier entsteht die Plattform für interaktive Mindmaps, die menschliche
                       Perspektiven und Ideen miteinander verbinden.
                     </p>
-                    <a routerLink="/child-orgs/create-your-humanity" class="btn btn-sm btn-outline-info">Mehr erfahren</a>
+                    <a routerLink="/create-your-humanity" class="btn btn-sm btn-outline-info">Mehr erfahren</a>
                   </div>
                 </div>
               </div>
@@ -106,7 +110,7 @@ import { RouterModule } from '@angular/router';
                       Die Plattform für den Austausch und die Entwicklung innovativer Ideen, die auf den Grundlagen von Create Your Humanity
                       aufbaut.
                     </p>
-                    <a routerLink="/child-orgs/create-your-ideas" class="btn btn-sm btn-outline-success">Mehr erfahren</a>
+                    <a routerLink="/create-your-ideas" class="btn btn-sm btn-outline-success">Mehr erfahren</a>
                   </div>
                 </div>
               </div>
@@ -123,7 +127,7 @@ import { RouterModule } from '@angular/router';
                       Die praktische Umsetzung von Ideen in reale Ereignisse und Zusammenkünfte, die Menschen physisch zusammenbringen und
                       Gemeinschaften stärken.
                     </p>
-                    <a routerLink="/child-orgs/create-your-events" class="btn btn-sm btn-outline-warning">Mehr erfahren</a>
+                    <a routerLink="/create-your-events" class="btn btn-sm btn-outline-warning">Mehr erfahren</a>
                   </div>
                 </div>
               </div>
@@ -137,6 +141,7 @@ import { RouterModule } from '@angular/router';
                     <p class="card-text">
                       Ein Projekt zur Erforschung und Förderung von Bedeutung und Sinnhaftigkeit im digitalen Zeitalter.
                     </p>
+                    <a routerLink="/create-your-senses" class="btn btn-sm btn-outline-secondary">Mehr erfahren</a>
                   </div>
                 </div>
               </div>
@@ -151,7 +156,7 @@ import { RouterModule } from '@angular/router';
                       Der konzeptuelle Ursprung: Ein Pool an Experten, die mit Wissen und Motivation zu einem faireren System beitragen
                       wollen.
                     </p>
-                    <a routerLink="/child-orgs/really-fair-org" class="btn btn-sm btn-outline-secondary">Mehr erfahren</a>
+                    <a routerLink="/really-fair" class="btn btn-sm btn-outline-secondary">Mehr erfahren</a>
                   </div>
                 </div>
               </div>
