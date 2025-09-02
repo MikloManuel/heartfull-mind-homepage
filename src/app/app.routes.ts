@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'heartfull-mind', pathMatch: 'full' },
+  { path: '', loadComponent: () => import('../app/child-orgs/heartfull-mind').then(m => m.HeartfullMindComponent), title: 'Heartfull Mind' },
   { path: 'heartfull-mind', loadComponent: () => import('../app/child-orgs/heartfull-mind').then(m => m.HeartfullMindComponent), title: 'Heartfull Mind' },
   { path: 'create-your-humanity', loadComponent: () => import('../app/child-orgs/create-your-humanity').then(m => m.CreateYourHumanityComponent), title: 'Create Your Humanity' },
   { path: 'create-your-events', loadComponent: () => import('../app/child-orgs/create-your-events').then(m => m.CreateYourEventsComponent), title: 'Create Your Event' },
