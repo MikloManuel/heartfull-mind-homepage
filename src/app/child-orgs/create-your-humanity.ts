@@ -10,42 +10,43 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="row">
       <div class="col-md-12">
-        <h1 class="display-4">Create Your Humanity</h1>
-        <p class="lead">Eine interaktive Mindmap-Plattform zur Abbildung der menschlichen Diversität</p>
-
-        <div class="card mb-4">
-          <div class="card-header bg-primary text-white">
-            <h2>Die Vision</h2>
-          </div>
-          <div class="card-body">
-            <p class="lead">
-              Create Your Humanity ist ein ambitioniertes Projekt, das versucht, die Welt durch eine interaktive Mindmap abzubilden und zu
-              strukturieren.
-            </p>
-
-            <p>
-              Wir erstellen eine umfassende Karte, die den "Value Chain" unserer Erde darstellt – eine Vernetzung aller menschlichen
-              Perspektiven und Erfahrungen. Ähnlich wie ein genealogischer Baum, aber für Ideen und Konzepte, schafft diese Struktur einen
-              gemeinsamen Bezugsrahmen für die Menschheit.
-            </p>
-
-            <blockquote class="blockquote">
-              <p>
-                Stellen Sie sich ein digitales "Freundschaftsbuch" vor, das die gesamte Menschheit umfasst – ein Ort, an dem jeder selbst
-                entscheiden kann, welche Informationen er teilen möchte und mit wem.
+        <div class="page-banner">
+         <h1 class="display-4">Create Your Humanity</h1>
+         <p class="lead">Eine interaktive Mindmap-Plattform zur Abbildung der menschlichen Diversität</p>
+        </div>
+          <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+              <h2>Die Vision</h2>
+            </div>
+            <div class="card-body">
+              <p class="lead">
+                Create Your Humanity ist ein ambitioniertes Projekt, das versucht, die Welt durch eine interaktive Mindmap abzubilden und zu
+                strukturieren.
               </p>
-            </blockquote>
 
-            <div class="text-center my-4">
-              <img
-                src="content/images/mindmap-humanity.svg"
-                alt="Create Your Humanity Mindmap"
-                class="img-fluid"
-                style="max-width: 700px;"
-              />
+              <p>
+                Wir erstellen eine umfassende Karte, die den "Value Chain" unserer Erde darstellt – eine Vernetzung aller menschlichen
+                Perspektiven und Erfahrungen. Ähnlich wie ein genealogischer Baum, aber für Ideen und Konzepte, schafft diese Struktur einen
+                gemeinsamen Bezugsrahmen für die Menschheit.
+              </p>
+
+              <blockquote class="blockquote">
+                <p>
+                  Stellen Sie sich ein digitales "Freundschaftsbuch" vor, das die gesamte Menschheit umfasst – ein Ort, an dem jeder selbst
+                  entscheiden kann, welche Informationen er teilen möchte und mit wem.
+                </p>
+              </blockquote>
+
+              <div class="text-center my-4">
+                <img
+                  src="content/images/mindmap-humanity.svg"
+                  alt="Create Your Humanity Mindmap"
+                  class="img-fluid"
+                  style="max-width: 700px;"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
         <div class="card mb-4">
           <div class="card-header bg-info text-white">

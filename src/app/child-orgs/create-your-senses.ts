@@ -10,9 +10,10 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="row">
       <div class="col-md-12">
-        <h1 class="display-4">Create Your Senses</h1>
-        <p class="lead">Eine Plattform für Sinnstiftung und persönliches Wachstum</p>
-
+        <div class="page-banner">
+         <h1 class="display-4">Create Your Senses</h1>
+         <p class="lead">Eine Plattform für Sinnstiftung und persönliches Wachstum</p>
+        </div>
         <div class="card mb-4">
           <div class="card-header bg-primary text-white">
             <h2>Die Suche nach Sinn</h2>

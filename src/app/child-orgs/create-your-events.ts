@@ -88,8 +88,10 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="row">
       <div class="col-md-12">
-        <h1 class="title">Create Your Event</h1>
-
+        <div class="page-banner">
+         <h1 class="title">Create Your Event</h1>
+          <p class="lead">Ein runder Tisch für Organisatoren, Verkäufer, Dienstleistern und natürlich den Event-Kunden..</p>
+        </div>
         <div class="card mb-4">
           <div class="card-header bg-primary text-white">
             <h2>Event-Präsentation</h2>
