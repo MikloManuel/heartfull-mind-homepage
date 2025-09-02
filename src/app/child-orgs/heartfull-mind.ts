@@ -50,7 +50,7 @@ import { RouterModule } from '@angular/router';
             </p>
 
             <div class="text-center mb-4">
-              <img src="content/images/mindmap-concept.svg" alt="Heartfull Mind Netzwerk" class="img-fluid" style="max-width: 600px;" />
+              <div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/2a0430a4-ced7-4345-b526-e7d16a924a8b" id="~pYMyB73eJ9f"></iframe></div>
             </div>
 
             <p>
