@@ -49,8 +49,8 @@ import { RouterModule } from '@angular/router';
               auf, die Schutz und Entfaltungsmöglichkeiten zugleich bietet.
             </p>
 
-            <div class="text-center mb-4">
-              <div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/2a0430a4-ced7-4345-b526-e7d16a924a8b" id="~pYMyB73eJ9f"></iframe></div>
+            <div class="text-center mb-4 mindmap-org">
+              <div style="width: 960px; height: 720px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:960px; height:720px" src="https://lucid.app/documents/embedded/2a0430a4-ced7-4345-b526-e7d16a924a8b" id="4KYM5G3hrPTr"></iframe></div>
             </div>
 
             <p>
